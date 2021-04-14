@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210315 18:16:11.870" generator="Robot 3.2.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/paphatsirithangthai/workspace/RobotFramework/spw-ecommerce/testcases/jsm/create_order.robot" id="s1" name="Create Order">
+<kw type="setup" name="Open JSM Website" library="jsm_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${jsm_url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:12.146" level="INFO">Opening browser 'Firefox' to base url 'http://13.250.139.89/'.</msg>
+<msg timestamp="20210315 18:16:12.149" level="INFO">Firefox driver log is always forced to to: /Users/paphatsirithangthai/workspace/RobotFramework/spw-ecommerce/output/geckodriver-1.log</msg>
+<status status="PASS" endtime="20210315 18:16:29.652" starttime="20210315 18:16:12.146"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20210315 18:16:30.149" starttime="20210315 18:16:29.652"></status>
+</kw>
+<status status="PASS" endtime="20210315 18:16:30.149" starttime="20210315 18:16:12.146"></status>
+</kw>
+<test id="s1-t1" name="Open Web">
+<kw name="Select Category" library="jsm_keywords">
+<arguments>
+<arg>xpath=//a[contains(text(),'BASE')]</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${product_link}</arg>
+</arguments>
+<status status="PASS" endtime="20210315 18:16:30.186" starttime="20210315 18:16:30.151"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${product_link}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:30.186" level="INFO">Clicking element 'xpath=//a[contains(text(),'PRODUCT')]'.</msg>
+<status status="PASS" endtime="20210315 18:16:30.262" starttime="20210315 18:16:30.186"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${category}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:30.263" level="INFO">Clicking element 'xpath=//a[contains(text(),'BASE')]'.</msg>
+<status status="PASS" endtime="20210315 18:16:37.010" starttime="20210315 18:16:30.262"></status>
+</kw>
+<status status="PASS" endtime="20210315 18:16:37.010" starttime="20210315 18:16:30.150"></status>
+</kw>
+<kw name="Select Product" library="jsm_keywords">
+<arguments>
+<arg>xpath=(//img[@alt='product'])[1]</arg>
+<arg>xpath=//option[@value='200']</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'ALL PRODUCTS')]</arg>
+</arguments>
+<status status="PASS" endtime="20210315 18:16:37.046" starttime="20210315 18:16:37.011"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>3 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20210315 18:16:37.052" starttime="20210315 18:16:37.046"></status>
+</kw>
+<kw name="Click Image" library="Selenium2Library">
+<doc>Clicks an image identified by ``locator``.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:37.052" level="INFO">Clicking image 'xpath=(//img[@alt='product'])[1]'.</msg>
+<status status="PASS" endtime="20210315 18:16:38.275" starttime="20210315 18:16:37.052"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_item_option}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:38.275" level="INFO">Clicking element 'css=#option_product'.</msg>
+<status status="PASS" endtime="20210315 18:16:38.630" starttime="20210315 18:16:38.275"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${item_value}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:38.631" level="INFO">Clicking element 'xpath=//option[@value='200']'.</msg>
+<status status="PASS" endtime="20210315 18:16:38.879" starttime="20210315 18:16:38.630"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//div[@id='ju-content'])[3]</arg>
+</arguments>
+<msg timestamp="20210315 18:16:38.880" level="INFO">Clicking element 'xpath=(//div[@id='ju-content'])[3]'.</msg>
+<status status="PASS" endtime="20210315 18:16:39.099" starttime="20210315 18:16:38.879"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scroll(0,184)</arg>
+</arguments>
+<msg timestamp="20210315 18:16:39.101" level="INFO">Executing JavaScript:
+window.scroll(0,184)
+Without any arguments.</msg>
+<status status="PASS" endtime="20210315 18:16:39.110" starttime="20210315 18:16:39.099"></status>
+</kw>
+<status status="PASS" endtime="20210315 18:16:39.110" starttime="20210315 18:16:37.011"></status>
+</kw>
+<kw name="Check Out Cart" library="jsm_keywords">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20210315 18:16:39.120" starttime="20210315 18:16:39.111"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_to_cart__button}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:39.120" level="INFO">Clicking element 'xpath=//button[@value='Add to Cart']'.</msg>
+<status status="PASS" endtime="20210315 18:16:39.360" starttime="20210315 18:16:39.120"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20210315 18:16:39.368" starttime="20210315 18:16:39.360"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${checkout_button}</arg>
+</arguments>
+<msg timestamp="20210315 18:16:39.369" level="INFO">Clicking element 'css=.wc-proceed-to-checkout &gt; #productForm .text-thai'.</msg>
+<status status="PASS" endtime="20210315 18:16:40.936" starttime="20210315 18:16:39.368"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scroll(0,307)</arg>
+</arguments>
+<msg timestamp="20210315 18:16:40.938" level="INFO">Executing JavaScript:
+window.scroll(0,307)
+Without any arguments.</msg>
+<status status="PASS" endtime="20210315 18:16:40.950" starttime="20210315 18:16:40.936"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${submit_button}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210315 18:16:46.338" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20210315 18:16:46.338" starttime="20210315 18:16:46.172"></status>
+</kw>
+<msg timestamp="20210315 18:16:46.342" level="FAIL">Element with locator 'xpath=//button[@name='submit']' not found.</msg>
+<status status="FAIL" endtime="20210315 18:16:46.342" starttime="20210315 18:16:40.950"></status>
+</kw>
+<status status="FAIL" endtime="20210315 18:16:46.342" starttime="20210315 18:16:39.110"></status>
+</kw>
+<tags>
+<tag>Test</tag>
+</tags>
+<status status="FAIL" endtime="20210315 18:16:46.343" critical="yes" starttime="20210315 18:16:30.149">Element with locator 'xpath=//button[@name='submit']' not found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20210315 18:16:46.931" starttime="20210315 18:16:46.344"></status>
+</kw>
+<doc>Test Make Order JSM</doc>
+<status status="FAIL" endtime="20210315 18:16:46.931" starttime="20210315 18:16:11.873"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Test</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create Order" pass="0">Create Order</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

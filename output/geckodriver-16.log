@@ -1,0 +1,24 @@
+1615808508814	geckodriver	INFO	Listening on 127.0.0.1:51632
+1615808509825	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/v9/lrt1bpcj3lsf98yxdw8kqy540000gn/T/rust_mozprofileB8aOXS"
+2021-03-15 18:41:51.918 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSButton: 0x12f59d800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.919 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSButton: 0x12f5a8000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.920 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSButton: 0x12f5a4800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.921 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSButton: 0x12f5a3800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.921 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSButton: 0x12f5a6c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.922 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12f5aa000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-15 18:41:51.923 firefox-bin[38235:1667245] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12f7e9800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615808513045	Marionette	INFO	Listening on port 51647
+1615808513092	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615808539633	Marionette	INFO	Stopped listening on port 51647
+JavaScript error: https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210315 18:26:23.476" generator="Robot 3.2.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/paphatsirithangthai/workspace/RobotFramework/spw-ecommerce/testcases/jsm/create_order.robot" id="s1" name="Create Order">
+<kw type="setup" name="Open JSM Website" library="jsm_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${jsm_url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210315 18:26:23.770" level="INFO">Opening browser 'Firefox' to base url 'http://13.250.139.89/'.</msg>
+<msg timestamp="20210315 18:26:23.772" level="INFO">Firefox driver log is always forced to to: /Users/paphatsirithangthai/workspace/RobotFramework/spw-ecommerce/output/geckodriver-8.log</msg>
+<status status="PASS" endtime="20210315 18:26:38.330" starttime="20210315 18:26:23.770"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210315 18:26:38.844" level="FAIL">InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<status status="FAIL" endtime="20210315 18:26:38.844" starttime="20210315 18:26:38.835"></status>
+</kw>
+<msg timestamp="20210315 18:26:38.844" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+<msg timestamp="20210315 18:26:38.845" level="FAIL">WebDriverException: Message: Failed to decode response from marionette
+</msg>
+<status status="FAIL" endtime="20210315 18:26:38.845" starttime="20210315 18:26:38.330"></status>
+</kw>
+<status status="FAIL" endtime="20210315 18:26:38.845" starttime="20210315 18:26:23.769"></status>
+</kw>
+<test id="s1-t1" name="Open Web">
+<tags>
+<tag>Test</tag>
+</tags>
+<status status="FAIL" endtime="20210315 18:26:38.846" critical="yes" starttime="20210315 18:26:38.845">Parent suite setup failed:
+WebDriverException: Message: Failed to decode response from marionette
+</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20210315 18:26:38.849" starttime="20210315 18:26:38.847"></status>
+</kw>
+<doc>Test Make Order JSM</doc>
+<status status="FAIL" endtime="20210315 18:26:38.849" starttime="20210315 18:26:23.478">Suite setup failed:
+WebDriverException: Message: Failed to decode response from marionette
+</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Test</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create Order" pass="0">Create Order</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210315 18:26:38.844" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: Tried to run command without establishing a connection
+</msg>
+</errors>
+</robot>
